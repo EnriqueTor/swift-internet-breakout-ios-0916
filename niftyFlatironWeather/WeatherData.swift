@@ -10,15 +10,15 @@ import Foundation
 
 class WeatherData {
     
-    // PROPERTIES 
+    // MARK: - Properties
     
     static let sharedInstance = WeatherData()
     
-    // INITIALIZERS
+    // MARK: - Initializers
     
     private init() {}
     
-    // METHODS
+    // MARK: - Methods
     
     func getCurrentDataFromAPI(completion: @escaping ([String:Any]) -> Void) {
         

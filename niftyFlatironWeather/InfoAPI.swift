@@ -10,11 +10,13 @@ import Foundation
 
 class infoAPI {
     
+    // MARK: - Properties
+    
     var time: Double
     var summary: String
     var icon: String
-    var nearestStormDistance: Double
-    var nearestStormBearing: Double
+    var nearestStormDistance: Double?
+    var nearestStormBearing: Double?
     var precipIntensity: Double
     var precipProbability: Double
     var temperature: Double
@@ -28,13 +30,15 @@ class infoAPI {
     var pressure: Double
     var ozone: Double
     
+    // MARK: - Initializers 
+    
     init(dictionary: [String:Any]) {
         
         self.time = dictionary["time"] as! Double
         self.summary = dictionary["summary"] as! String
         self.icon = dictionary["icon"] as! String
-        self.nearestStormDistance = dictionary["nearestStormDistance"] as! Double
-        self.nearestStormBearing = dictionary["nearestStormBearing"] as! Double
+//        self.nearestStormDistance = dictionary["nearestStormDistance"] as! Double
+//        self.nearestStormBearing = dictionary["nearestStormBearing"] as! Double
         self.precipIntensity = dictionary["precipIntensity"] as! Double
         self.precipProbability = dictionary["precipProbability"] as! Double
         self.temperature = dictionary["temperature"] as! Double
@@ -51,5 +55,5 @@ class infoAPI {
     }
 
 }
-    
+
     

@@ -64,27 +64,51 @@
 		8F0772731DC2FDEF0061A640 /* niftyFlatironWeather */ = {
 			isa = PBXGroup;
 			children = (
-				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
-				8F0772761DC2FDEF0061A640 /* ViewController.swift */,
-				BB2A3F9A1DCFA894001AE294 /* HourlyTableViewCell.swift */,
-				BBF89D5C1DCD033C007912E5 /* API */,
-				BBF89D581DCCE2A1007912E5 /* Secrets.swift */,
-				8F0772781DC2FDEF0061A640 /* Main.storyboard */,
-				8F07727B1DC2FDEF0061A640 /* Assets.xcassets */,
-				8F07727D1DC2FDEF0061A640 /* LaunchScreen.storyboard */,
-				8F0772801DC2FDEF0061A640 /* Info.plist */,
+				BB3CD0151DFCEE2D00F9A16C /* Controllers */,
+				BB3CD0141DFCEDDC00F9A16C /* Model */,
+				BB3CD0161DFCEE4800F9A16C /* View */,
+				BB3CD0171DFCEE6900F9A16C /* Supporting Files */,
 			);
 			path = niftyFlatironWeather;
 			sourceTree = "<group>";
 		};
-		BBF89D5C1DCD033C007912E5 /* API */ = {
+		BB3CD0141DFCEDDC00F9A16C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BBF89D5A1DCD032E007912E5 /* InfoAPI.swift */,
 				BBF89D561DCCE28F007912E5 /* WeatherAPI.swift */,
 				BBF89D5D1DCD10BA007912E5 /* WeatherData.swift */,
-				BBF89D5A1DCD032E007912E5 /* InfoAPI.swift */,
 			);
-			name = API;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB3CD0151DFCEE2D00F9A16C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F0772761DC2FDEF0061A640 /* ViewController.swift */,
+				BB2A3F9A1DCFA894001AE294 /* HourlyTableViewCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BB3CD0161DFCEE4800F9A16C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F0772781DC2FDEF0061A640 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB3CD0171DFCEE6900F9A16C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F0772741DC2FDEF0061A640 /* AppDelegate.swift */,
+				BBF89D581DCCE2A1007912E5 /* Secrets.swift */,
+				8F07727B1DC2FDEF0061A640 /* Assets.xcassets */,
+				8F07727D1DC2FDEF0061A640 /* LaunchScreen.storyboard */,
+				8F0772801DC2FDEF0061A640 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

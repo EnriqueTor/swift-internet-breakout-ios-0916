@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C63a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,12 +26,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXj-YP-MWZ">
                                 <rect key="frame" x="161" y="45" width="52.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZvC-U8-3O8">
                                 <rect key="frame" x="16" y="330" width="343" height="267"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hourlyCell" id="SJT-9e-6ml" customClass="HourlyTableViewCell" customModule="niftyFlatironWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
@@ -40,29 +41,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-9b-wfq">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNd-9b-wfq">
                                                     <rect key="frame" x="8" y="11" width="119" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZS-hg-6AH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZS-hg-6AH">
                                                     <rect key="frame" x="249" y="11" width="86" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-pw-2gv">
-                                                    <rect key="frame" x="125" y="8" width="85" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emoji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-P2-cSh" userLabel="Emoji Label">
+                                                    <rect key="frame" x="112" y="11" width="118" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="hourlyImage" destination="XgR-pw-2gv" id="dmj-WA-alI"/>
+                                            <outlet property="emoji" destination="pvW-P2-cSh" id="ppn-ZU-Xje"/>
                                             <outlet property="tempLabel" destination="iZS-hg-6AH" id="fri-lk-vWm"/>
                                             <outlet property="timeLabel" destination="XNd-9b-wfq" id="sDI-YV-8LM"/>
                                         </connections>
@@ -81,24 +85,36 @@
                                     <segment title="Daily"/>
                                 </segments>
                                 <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pickSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="oHo-hw-Z0b"/>
+                                </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-pw-2gv">
+                                <rect key="frame" x="0.0" y="75" width="375" height="247"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nQL-CP-IfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0iv-uE-dAR"/>
+                            <constraint firstItem="XgR-pw-2gv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3kZ-Yt-1Qa"/>
                             <constraint firstItem="ZvC-U8-3O8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="4CP-Rt-Ou5"/>
                             <constraint firstItem="ZvC-U8-3O8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-70" id="5yC-Yc-bDk"/>
                             <constraint firstItem="nQL-CP-IfR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="DdX-b3-I6K"/>
                             <constraint firstItem="LXj-YP-MWZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="EI9-5J-U45"/>
                             <constraint firstItem="nQL-CP-IfR" firstAttribute="top" secondItem="ZvC-U8-3O8" secondAttribute="bottom" constant="20" id="R57-U4-3qH"/>
+                            <constraint firstItem="XgR-pw-2gv" firstAttribute="bottom" secondItem="ZvC-U8-3O8" secondAttribute="top" constant="-8" id="aF3-GH-fYf"/>
                             <constraint firstItem="ZvC-U8-3O8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ac5-Fh-Npi"/>
                             <constraint firstItem="ZvC-U8-3O8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bt5-IY-s5T"/>
+                            <constraint firstItem="XgR-pw-2gv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.37" id="hl2-by-J6r"/>
+                            <constraint firstItem="XgR-pw-2gv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iDZ-1D-bsR"/>
                             <constraint firstItem="LXj-YP-MWZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyF-6L-bXk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelTemp" destination="LXj-YP-MWZ" id="t46-Ia-k9r"/>
+                        <outlet property="pickSegment" destination="nQL-CP-IfR" id="71o-Di-aqk"/>
                         <outlet property="tableViewHourly" destination="ZvC-U8-3O8" id="wrF-LU-0Tw"/>
+                        <outlet property="weatherView" destination="XgR-pw-2gv" id="uML-df-oMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

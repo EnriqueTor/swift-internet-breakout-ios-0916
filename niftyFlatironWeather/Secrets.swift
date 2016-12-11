@@ -12,6 +12,6 @@ struct Secrets {
     
     static let link: String = "https://api.darksky.net/forecast/"
     
-    static let key: String = "38150b8382fc11fe16cfa519ca4a4867/37.8267,-122.4233"
+    static let key: String = "117a2c522c6c373e7e1a30b87fc03d60/37.8267,-122.4233"
     
 }

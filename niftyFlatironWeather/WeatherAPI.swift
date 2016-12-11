@@ -10,6 +10,8 @@ import Foundation
 
 class WeatherAPI {
     
+    // MARK: - Methods 
+    
     class func getWeatherInfo(with completion: @escaping (([String:Any]) -> Void)) {
         
         let urlString = Secrets.link + Secrets.key
@@ -18,11 +20,11 @@ class WeatherAPI {
         let url = URL(string: urlString)
         print("3. We transfor the string into an URL")
         
-        let session = URLSession.shared
-        print("4. We created the URL session that we will use to enter the web")
-        
         guard let unwrappedUrl = url else { return }
-        print("5. We are taking care of the optional")
+        print("4. We are taking care of the optional")
+        
+        let session = URLSession.shared
+        print("5. We created the URL session that we will use to enter the web")
         
         let task = session.dataTask(with: unwrappedUrl) { (data, response, error) in
             print("6. We are creating the constant to get the data from an URL")

@@ -10,10 +10,10 @@ import UIKit
 
 class HourlyTableViewCell: UITableViewCell {
     
+    // MARK: - Outlets 
+    
     @IBOutlet weak var timeLabel: UILabel!
-    
     @IBOutlet weak var tempLabel: UILabel!
-    
-    @IBOutlet weak var hourlyImage: UIImageView!
+    @IBOutlet weak var emoji: UILabel!
     
 }
